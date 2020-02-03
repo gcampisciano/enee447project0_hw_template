@@ -7,6 +7,7 @@
   - **NOTE: Set up **64-bit** ARM cross-compilation (instead of 32-bit) if you are using this template**
 - [Bare metal programming](https://github.com/dwelch67/raspberrypi/tree/master/baremetal)
 - [This ARM doc](http://classweb.ece.umd.edu/enee447.S2019/ARM-Documentation/BCM2836-QA7.pdf) where you can learn how to make use of the timer on board
+- [How Raspberry Pi boots](https://raspberrypi.stackexchange.com/questions/10442/what-is-the-boot-sequence)
 
 ## Environment setup
 - Ubuntu (TBD)
