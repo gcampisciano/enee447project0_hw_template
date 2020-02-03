@@ -3,7 +3,7 @@
 - `time.c`
 
 ## Environment setup
-- Set up **64-bit** ARM cross-compilation
+- Set up **64-bit** ARM cross-compilation if you are using this template (Set up **32-bit** if you are using the template on ELMS)
 
 ## How to test your solution
 - Compile this code with "make" command
