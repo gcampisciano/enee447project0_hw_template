@@ -8,6 +8,7 @@
 - [Bare metal programming](https://github.com/dwelch67/raspberrypi/tree/master/baremetal)
 - [This ARM doc](http://classweb.ece.umd.edu/enee447.S2019/ARM-Documentation/BCM2836-QA7.pdf) where you can learn how to make use of the timer on board
 - [How Raspberry Pi boots](https://raspberrypi.stackexchange.com/questions/10442/what-is-the-boot-sequence)
+- [32-bit ARM calling convecntion](https://en.wikipedia.org/wiki/Calling_convention#ARM_(A32)), which could probably help you understand `utils.s`
 
 ## Environment setup
 - Ubuntu (TBD)
