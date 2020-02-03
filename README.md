@@ -3,11 +3,13 @@
 - `time.c`
 
 ## Readings recommended
+- [p0.pdf on ELMS](https://umd.instructure.com/courses/1277187/files/folder/Lab%20Files%20Spring%202020/Project%200?preview=55362636)
+  - **Set up **64-bit** ARM cross-compilation if you are using this template**
 - [Bare metal programming](https://github.com/dwelch67/raspberrypi/tree/master/baremetal)
 - [This ARM doc](http://classweb.ece.umd.edu/enee447.S2019/ARM-Documentation/BCM2836-QA7.pdf) where you can learn how to make use of the timer on board
 
 ## Environment setup
-- Set up **64-bit** ARM cross-compilation if you are using this template
+- Ubuntu (TBD)
 
 ## How to test your solution
 - Compile this code with "make" command
