@@ -13,6 +13,7 @@
 ## Environment setup
 - Ubuntu (TBD)
   - Download [AArch64 ELF bare-metal target](https://developer.arm.com/-/media/Files/downloads/gnu-a/9.2-2019.12/binrel/gcc-arm-9.2-2019.12-x86_64-aarch64-none-elf.tar.xz?revision=ea238776-c7c7-43be-ba0d-40d7f594af1f&la=en&hash=2937ED76D3E6B85BA511BCBD46AE121DBA5268F3)
+  - Modify `.bashrc` at the home directory, put this line at the end `export PATH=$PATH:/home/student/Desktop/gcc-arm-9.2-2019.12-x86_64-aarch64-none-elf/bin/` (assuming you uncompressed the cross-compiler at `Desktop`)
 
 ](gcc-arm-9.2-2019.12-x86_64-aarch64-none-elf.tar.xz)
 
