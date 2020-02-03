@@ -12,6 +12,9 @@
 
 ## Environment setup
 - Ubuntu (TBD)
+  - Download [AArch64 ELF bare-metal target (aarch64-none-elf)
+
+](gcc-arm-9.2-2019.12-x86_64-aarch64-none-elf.tar.xz)
 
 ## How to test your solution
 - Compile this code with `make` command
