@@ -13,7 +13,7 @@ unsigned long usec_diff ( unsigned long operand_1, unsigned long operand_2)
 
 void wait( unsigned int usecs )
 {
-	// Needs implementation
+	usleep(usecs);	
 }
 
 void init_timer()
