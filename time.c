@@ -8,11 +8,7 @@
 
 unsigned long now_usec ( void )
 {
-	/*long us;
-	struct timespec sp;
-	clock_gettime(CLOCK_REALTIME, &sp);
-    	us = sp.tv_nsec / 1000;
-	return us; */
+	// read value from timer
 }
 
 unsigned long usec_diff ( unsigned long operand_1, unsigned long operand_2)
@@ -33,6 +29,6 @@ void wait( unsigned int usecs )
 
 void init_timer()
 {
-	
+	// start timer
 }
 
