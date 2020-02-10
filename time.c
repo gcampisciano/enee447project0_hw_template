@@ -3,9 +3,9 @@
 
 unsigned long now_usec ( void )
 {
-	time_t seconds;
-	seconds = time(NULL);
-	return seconds;
+	struct timeval curtime;
+	gettimeofday(&curtime, NULL);
+	return curtime.tv_sec * (int)1e6 + curtime.tv_usec;	
 }
 
 unsigned long usec_diff ( unsigned long operand_1, unsigned long operand_2)
@@ -17,8 +17,8 @@ unsigned long usec_diff ( unsigned long operand_1, unsigned long operand_2)
 
 void wait( unsigned int usecs )
 {
-	time_t start;
-	time_t diff;
+	unsigned long start;
+	unsigned long diff;
 	start = now_usec();
 	diff = usec_diff(start, now_usec());
 	while(diff < usecs) {
