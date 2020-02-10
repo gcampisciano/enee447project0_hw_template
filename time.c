@@ -1,13 +1,14 @@
 #include "time.h"
 #include "utils.h"
-#include "math.h"
+#include <sys/time.h>
 
 unsigned long now_usec ( void )
 {
 	long us;
 	struct timespec sp;
 	clock_gettime(CLOCK_REALTIME, &sp);
-    	us = round(sp.tv_nsec / 1.0e3);
+    	us = sp.tv_nsec / 1000;
+	return us;
 }
 
 unsigned long usec_diff ( unsigned long operand_1, unsigned long operand_2)
