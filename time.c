@@ -4,13 +4,10 @@
 
 unsigned long now_usec ( void )
 {
-	long ms;
-	time_t t;
+	long us;
 	struct timespec sp;
-	
 	clock_gettime(CLOCK_REALTIME, &sp);
-	t  = spec.tv_sec;
-    	ms = round(spec.tv_nsec / 1.0e6);
+    	us = round(sp.tv_nsec / 1.0e3);
 }
 
 unsigned long usec_diff ( unsigned long operand_1, unsigned long operand_2)
@@ -31,6 +28,6 @@ void wait( unsigned int usecs )
 
 void init_timer()
 {
-	
+	// None
 }
 
