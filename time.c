@@ -1,14 +1,18 @@
 #include "time.h"
 #include "utils.h"
-#include <sys/time.h>
+
+#define CORE_PRESCALAR 0x4000_0008
+#define MS_BITS 0x4000_0020
+#define LS_BITS 0x4000_001C
+
 
 unsigned long now_usec ( void )
 {
-	long us;
+	/*long us;
 	struct timespec sp;
 	clock_gettime(CLOCK_REALTIME, &sp);
     	us = sp.tv_nsec / 1000;
-	return us;
+	return us; */
 }
 
 unsigned long usec_diff ( unsigned long operand_1, unsigned long operand_2)
@@ -29,6 +33,6 @@ void wait( unsigned int usecs )
 
 void init_timer()
 {
-	// None
+	
 }
 
