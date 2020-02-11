@@ -1,14 +1,16 @@
 #include "time.h"
 #include "utils.h"
 
-#define CORE_PRESCALAR 0x4000_0008
-#define MS_BITS 0x4000_0020
-#define LS_BITS 0x4000_001C
+#define CORE_PRESCALAR 0x40000008
+#define MS_BITS 0x40000020
+#define LS_BITS 0x4000001C
 
 
 unsigned long now_usec ( void )
 {
 	// read value from timer
+	unsigned int v, v2;
+	
 	v = GET32(LS_BITS); // get LS bits
 	v2 = GET32(MS_BITS); // get MS bits
 	return (v << 32) + v2; // shift LS bits by 32 and add MS bits
@@ -33,6 +35,6 @@ void wait( unsigned int usecs )
 void init_timer()
 {
 	// start timer
-	PUT32(CORE_PRESCALAR, 0x8000_0000); // divider = 1;
+	PUT32(CORE_PRESCALAR, 0x80000000); // divider = 1;
 }
 
