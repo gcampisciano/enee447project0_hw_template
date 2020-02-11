@@ -9,6 +9,9 @@
 unsigned long now_usec ( void )
 {
 	// read value from timer
+	v = GET32(LS_BITS); // get LS bits
+	v2 = GET32(MS_BITS); // get MS bits
+	return (v << 32) + v2; // shift LS bits by 32 and add MS bits
 }
 
 unsigned long usec_diff ( unsigned long operand_1, unsigned long operand_2)
@@ -30,5 +33,6 @@ void wait( unsigned int usecs )
 void init_timer()
 {
 	// start timer
+	PUT32(CORE_PRESCALAR, 0x8000_0000); // divider = 1;
 }
 
