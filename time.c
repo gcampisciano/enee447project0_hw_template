@@ -6,7 +6,7 @@
 #define LS_BITS 0x4000001C
 
 
-unsigned long now_usec ( void )
+unsigned long now_usec ( void ) // get value from timer
 {
 	unsigned int v, v2;
 	
@@ -31,7 +31,7 @@ void wait( unsigned int usecs )
 	}
 }
 
-void init_timer()
+void init_timer() // start timer
 {
 	// start timer, divider = 1, increment = 1, 
 	PUT32(CORE_PRESCALAR, 0x80000000); // divider = 1;
