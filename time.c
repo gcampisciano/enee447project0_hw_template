@@ -33,7 +33,7 @@ void wait( unsigned int usecs )
 
 void init_timer() // start timer
 {
-	// start timer, divider = 1, increment = 1, 
-	PUT32(CORE_PRESCALAR, 0x80000000); // divider = 1;
+	// start timer, divider = 19.2, increment = 1, 
+	PUT32(CORE_PRESCALAR, 0x06AAAAAB); // divider = 19.2;
 }
 
